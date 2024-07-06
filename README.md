@@ -357,7 +357,7 @@ def verify_csrf_token(token):
    - If the tokens do not match, the request is rejected with a "CSRF token is invalid" error.
    - If the token is valid, the server proceeds with processing the form data (e.g., performing the transfer).
 
-    ````python
+````python
     @app.route('/transfer', methods=['GET', 'POST'])
     def transfer():
     session_data = get_session_data()
